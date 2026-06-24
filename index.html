@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Ask Atlantic</title>
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">Ask Atlantic</p>
+    <div class="hero">
+      <h1>The 60-second trust check</h1>
+      <p>Pick your biggest concern about defence-grade AI. Get a straight myth-vs-fact answer.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="questions">
+      <button class="card-btn" onclick="showAnswer('regulation', this)">
+        <span class="btn-icon">🛡️</span> Is it regulated?
+      </button>
+      <button class="card-btn" onclick="showAnswer('ethics', this)">
+        <span class="btn-icon">⚠️</span> Could it be misused?
+      </button>
+      <button class="card-btn" onclick="showAnswer('data', this)">
+        <span class="btn-icon">🗄️</span> Where does data go?
+      </button>
+      <button class="card-btn" onclick="showAnswer('accountability', this)">
+        <span class="btn-icon">👥</span> Who is accountable?
+      </button>
+    </div>
+
+    <div class="answer hidden" id="answer">
+      <p class="answer-title" id="ans-title"></p>
+      <div class="answer-row">
+        <span class="tag myth">Myth</span>
+        <p id="ans-myth"></p>
+      </div>
+      <div class="answer-row">
+        <span class="tag fact">Fact</span>
+        <p id="ans-fact"></p>
+      </div>
+      <p class="answer-cta" id="ans-cta"></p>
+    </div>
+  </main>
+</body>
+</html>

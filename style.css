@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1566d1;
+  color: #f8f0f0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.eyebrow {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff7f7;
+  margin-bottom: 12px;
+}
+
+.hero{
+  font-family: 'Lato', sans-serif;
+}
+
+.hero h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.hero p {
+  font-size: 15px;
+  color: #fdfbfb;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin-bottom: 28px;
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.card-btn {
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.card-btn:hover {
+  background: #eeeee8;
+}
+
+.card-btn.active {
+  border-color: #aaa;
+  background: #eeeee8;
+}
+
+.btn-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.answer {
+  background: #fff;
+  border: 1px solid #060500;
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.answer.hidden {
+  display: none;
+}
+
+.answer-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.answer-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.tag.myth {
+  background: #e13112;
+  color: #ffffff;
+}
+
+.tag.fact {
+  background: #15d28f;
+  color: #ffffff;
+}
+
+.answer-row p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.65;
+}
+
+.answer-cta {
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid #e0dfd9;
+  padding-top: 14px;
+  margin-top: 4px;
+}
+
+.answer-cta::before {
+  content: "→ ";
+}
